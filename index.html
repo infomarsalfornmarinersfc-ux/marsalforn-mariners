@@ -177,12 +177,12 @@ footer {
   /* Youth Academy – Bigger U16 & U19 Sections */
 #academy .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   gap: px;
 }
 
 #academy .card {
-  padding: 10px;
+  padding: 2px;
   font-size: 1.05em;
 }
 
@@ -212,34 +212,13 @@ footer {
 </button>-->
 
 <style>
-  <!--#subscribeBtn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #0055a5; /* Blue */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }-->
+ 
 
-  #subscribeBtn:active {
-    background-color: #FFD700; /* Yellow when pressed */
-    color: black;
-  }
 
-  #subscribeBtn:hover {
-    opacity: 0.9;
-  }
+ 
 </style>
 
-<script>
-  document.getElementById('subscribeBtn').addEventListener('click', function() {
-    OneSignal.push(function() {
-      OneSignal.showNativePrompt();
-    });
-  });
-</script>
+
 
 <header style="display: flex; justify-content: center; align-items: center; gap: 20px; height: 150px;">
   <!-- Logo on the left -->
