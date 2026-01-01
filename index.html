@@ -220,17 +220,19 @@ footer {
     <h1 style="margin: 0;">Marsalforn Mariners Football Club</h1>
     <p style="margin: 5px 0 0 0;">From The Sea We Rise</p>
   </div>
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
- <script>
-   window.OneSignal = window.OneSignal || [];
-   OneSignal.push(function() {
-     OneSignal.init({
-       appId: "YOUR_APP_ID",  // Replace with your OneSignal App ID
-       notifyButton: { enable: true },
-     });
-   });
- </script>
+    
+ 
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "PASTE_YOUR_REAL_APP_ID_HERE",
+      notifyButton: { enable: false }
+    });
+  });
+</script>
 
 
 </header>
@@ -524,6 +526,15 @@ window.addEventListener('scroll', () => {
 backToTop.addEventListener('click', () => { 
   window.scrollTo({ top: 0, behavior: 'smooth' }); 
 });
+</script>
+<script>
+  document.getElementById("subscribeBtn").addEventListener("click", function () {
+    if (window.OneSignal) {
+      OneSignal.push(function () {
+        OneSignal.showSlidedownPrompt();
+      });
+    }
+  });
 </script>
 
 </body>
