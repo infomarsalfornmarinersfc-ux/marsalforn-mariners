@@ -224,12 +224,12 @@ footer {
  
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
 
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 <script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "PASTE_YOUR_REAL_APP_ID_HERE",
-      notifyButton: { enable: false }
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "322b8498-73d4-4e0b-95ee-58004f2a6bd9",
     });
   });
 </script>
